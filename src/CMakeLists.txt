@@ -9,7 +9,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 # Refer to single internal library only if it's not assembled into a big library.
 option(ENABLE_ASSEMBLE "Enable assemble" OFF)
 if (NOT ${ENABLE_ASSEMBLE})
-    find_package(PkgConfig REQUIRED)
+    #find_package(PkgConfig REQUIRED)
     set(OPENSSL_USE_STATIC_LIBS TRUE)
     #find_package(OpenSSL REQUIRED)
     #设置openssl的库头文件
